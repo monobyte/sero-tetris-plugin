@@ -1,0 +1,60 @@
+{
+  "name": "@sero-ai/plugin-tetris",
+  "version": "0.1.0",
+  "description": "Tetris game for Sero — a classic arcade game with HD particle effects",
+  "keywords": [
+    "pi-package"
+  ],
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "typecheck": "tsc --noEmit -p ui/tsconfig.json"
+  },
+  "pi": {
+    "extensions": [
+      "./extension/index.ts"
+    ]
+  },
+  "sero": {
+    "app": {
+      "id": "tetris",
+      "name": "Tetris",
+      "icon": "gamepad-2",
+      "stateFile": ".sero/apps/tetris/state.json",
+      "ui": "./dist/ui/remoteEntry.js",
+      "component": "TetrisApp",
+      "devPort": 5179
+    },
+    "plugin": {
+      "category": "entertainment",
+      "tags": [
+        "tetris",
+        "game",
+        "arcade"
+      ],
+      "minSeroVersion": "0.1.0",
+      "preBuilt": false
+    }
+  },
+  "dependencies": {
+    "zod": "^4.3.6"
+  },
+  "peerDependencies": {
+    "@mariozechner/pi-coding-agent": ">=0.61.1",
+    "zod": ">=4.0.0"
+  },
+  "devDependencies": {
+    "@module-federation/vite": "^1.11.0",
+    "@sero-ai/app-runtime": "^0.1.0",
+    "@tailwindcss/vite": "^4.1.18",
+    "@types/node": "^22.19.11",
+    "@types/react": "^19.2.13",
+    "@types/react-dom": "^19.2.3",
+    "@vitejs/plugin-react": "^4.7.0",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "tailwindcss": "^4.1.18",
+    "typescript": "^5.9.3",
+    "vite": "^6.4.1"
+  }
+}
