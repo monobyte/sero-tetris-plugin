@@ -1,6 +1,6 @@
 {
   "name": "@sero-ai/plugin-tetris",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Tetris game for Sero — a classic arcade game with HD particle effects",
   "keywords": [
     "pi-package"
@@ -37,10 +37,11 @@
     }
   },
   "dependencies": {
-    "zod": "^4.3.6"
+    "zod": ">=4.0.0"
   },
   "peerDependencies": {
-    "@earendil-works/pi-coding-agent": ">=0.78.0",
+    "@earendil-works/pi-agent-core": ">=0.80.6",
+    "@earendil-works/pi-coding-agent": ">=0.80.6",
     "zod": ">=4.0.0"
   },
   "devDependencies": {
