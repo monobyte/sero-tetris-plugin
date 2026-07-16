@@ -2,6 +2,7 @@
   "name": "@sero-ai/plugin-tetris",
   "version": "0.1.1",
   "description": "Tetris game for Sero — a classic arcade game with HD particle effects",
+  "type": "module",
   "keywords": [
     "pi-package"
   ],
